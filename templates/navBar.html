@@ -1,0 +1,50 @@
+<!doctype html>
+{% load static %}
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home">
+            <img src={% static "img/home.png" %} alt="" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Paciente
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/paciente/busquedaPaciente">Editar</a></li>
+                        <li><a class="dropdown-item" href="/paciente/nuevo">Añadir</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        IPRESS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/ipress/busquedaIPRESS">Editar</a></li>
+                        <li><a class="dropdown-item" href="/ipress/nuevo">Añadir</a></li>
+                    </ul>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jefe</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Medico
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/medico/busquedaMedico">Editar</a></li>
+                        <li><a class="dropdown-item" href="/medico/nuevo">Añadir</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
